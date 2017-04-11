@@ -5,7 +5,7 @@
   "main": "dist",
   "scripts": {
     "start": "echo 'hello there'",
-    "watch": "npm run build -- --watch",
+    "watch": "npm run babel -- --watch",
     "test": "ava",
     "tdd": "ava --watch",
     "lint": "eslint .",
