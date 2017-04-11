@@ -60,7 +60,9 @@ class Documentation extends React.Component {
               <Col xs key={doc.title}>
                 <div className="navigation__item" >
                   <li>
-                    <a href={ generateURL(doc.title) }>{ generateName(doc.title) }</a>
+                    <a href={ generateURL(doc.title) }>
+                      { generateName(doc.title) }
+                    </a>
                   </li>
                   { this.renderSubTitles(doc) }
                 </div>
@@ -94,7 +96,7 @@ class Documentation extends React.Component {
         <Grid fluid>
           <Row>
             <Col xs={12}>
-              <h1>React BEM Grid</h1>
+              <h1>Grid</h1>
             </Col>
           </Row>
           <Row>
