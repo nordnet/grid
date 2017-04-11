@@ -50,6 +50,15 @@
     ],
     "babel": "inherit"
   },
+  "nyc": {
+    "include": [
+      "src/*/index.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
   "devDependencies": {
     "ava": "^0.19.1",
     "babel-cli": "^6.24.1",
