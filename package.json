@@ -21,6 +21,7 @@
     "babel": "babel src -d dist --copy-files --ignore test.js,.md",
     "build": "run-s clean babel",
     "prepublish": "in-publish && run-s build || not-in-publish",
+    "coveralls": "coveralls < coverage/lcov.info",
     "push": "git push --follow-tags",
     "postpublish": "run-s clean push"
   },
