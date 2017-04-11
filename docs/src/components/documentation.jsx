@@ -106,10 +106,10 @@ class Documentation extends React.Component {
           </Row>
           <Row>
             <Col xs={6} sm={4} smOffset={2} lg={3} lgOffset={3}>
-              <a href="https://www.npmjs.com/package/react-bem-grid" className="btn btn--primary">NPM</a>
+              <a href="https://www.npmjs.com/package/@nordnetab/grid" className="btn btn--primary">NPM</a>
             </Col>
             <Col xs={6} sm={4} lg={3}>
-              <a href="https://github.com/nordnet/react-bem-grid" className="btn btn--primary">Github</a>
+              <a href="https://github.com/nordnet/grid" className="btn btn--primary">Github</a>
             </Col>
           </Row>
         </Grid>
