@@ -1,9 +1,11 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 import cn from 'classnames';
-import isNumber from 'lodash.isnumber';
 
 import styles from './styles';
+
+const isBoolean = x => typeof x === 'boolean';
 
 function Col({
   classes,
@@ -21,10 +23,10 @@ function Col({
     [classes.col]: true,
     [classes.reverse]: reverse,
 
-    [classes[isNumber(xs) ? `xs-size-${xs}` : `xs`]]: xs >= 0,
-    [classes[isNumber(sm) ? `sm-size-${sm}` : `sm`]]: sm >= 0,
-    [classes[isNumber(md) ? `md-size-${md}` : `md`]]: md >= 0,
-    [classes[isNumber(lg) ? `lg-size-${lg}` : `lg`]]: lg >= 0,
+    [classes[isBoolean(xs) ? `xs` : `xs-size-${xs}`]]: xs >= 0,
+    [classes[isBoolean(sm) ? `sm` : `sm-size-${sm}`]]: sm >= 0,
+    [classes[isBoolean(md) ? `md` : `md-size-${md}`]]: md >= 0,
+    [classes[isBoolean(lg) ? `lg` : `lg-size-${lg}`]]: lg >= 0,
 
     [classes[`xs-offset-${xsOffset}`]]: xsOffset >= 0,
     [classes[`sm-offset-${smOffset}`]]: smOffset >= 0,

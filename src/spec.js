@@ -1,5 +1,3 @@
-export const merge = (x, y) => Object.assign({}, x, y);
-
 export const columns = 12;
 
 export const gutter = '2rem';
@@ -27,7 +25,6 @@ export const media = {
 };
 
 export default {
-  merge,
   columns,
   gutter,
   breakpoints,
