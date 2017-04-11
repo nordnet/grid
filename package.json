@@ -11,6 +11,7 @@
   "scripts": {
     "start": "run-p watch docs:start",
     "docs:start": "onpm docs start",
+    "predocs:deploy": "run-s build",
     "docs:deploy": "onpm docs run deploy",
     "watch": "npm run babel -- --watch",
     "test": "ava",
