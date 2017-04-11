@@ -9,24 +9,29 @@
 
 ## Install
 
-    npm install --save @nordnetab/grid
-    # or
-    yarn add @nordnetab/grid
+```sh
+npm install --save @nordnetab/grid
+# or
+yarn add @nordnetab/grid
+```
 
 ## Usage
 
 ```js
-import { Grid, Row, Col } from 'grid';
+import React from 'react';
+import { Grid, Row, Col } from '@nordnetab/grid';
 
 const App = () => (
   <Grid>
     <Row>
       <Col xs={12} sm={8} md={6} lg={4}>
-        …
+        GRID
       </Col>
     </Row>
   </Grid>
 )
+
+export default App;
 ```
 
 See more at https://nordnet.github.io/grid/
