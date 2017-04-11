@@ -4,7 +4,8 @@
   "description": "Grid system",
   "main": "dist",
   "scripts": {
-    "start": "echo 'hello there'",
+    "start": "run-p watch docs",
+    "docs": "onpm docs start",
     "watch": "npm run babel -- --watch",
     "test": "ava",
     "tdd": "ava --watch",
@@ -32,6 +33,7 @@
     "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-require-path-exists": "^1.1.5",
     "npm-run-all": "^4.0.2",
+    "othernpm": "^1.1.0",
     "rimraf": "^2.6.1"
   },
   "dependencies": {
