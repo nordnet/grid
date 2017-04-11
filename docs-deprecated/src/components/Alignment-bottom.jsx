@@ -1,12 +1,12 @@
 import React from 'react';
-import { Row, Col } from './grid';
+import { Grid, Row, Col } from 'react-bem-grid';
 import Box from './Box';
 import StyleGuideItem from './StyleGuideItem';
 
-class AlignmentTop extends React.Component {
+class AlignmentBottom extends React.Component {
   render() {
     const simplifiedMarkup = `<Grid>
-  <Row xsTop>
+  <Row xsBottom>
     <Col xs={6}>
       ...
     </Col>
@@ -17,7 +17,7 @@ class AlignmentTop extends React.Component {
 </Grid>`;
 
     const markup = (
-      <Row xsTop>
+      <Row xsBottom>
         <Col xs={6}>
           <Box style={ {minHeight: '6rem'} } />
         </Col>
@@ -29,7 +29,7 @@ class AlignmentTop extends React.Component {
 
     return (
       <StyleGuideItem
-        subTitle="Top"
+        subTitle="Bottom"
         simplifiedMarkup={ simplifiedMarkup }
       >
       { markup }
@@ -38,4 +38,4 @@ class AlignmentTop extends React.Component {
   }
 }
 
-export default AlignmentTop;
+export default AlignmentBottom;

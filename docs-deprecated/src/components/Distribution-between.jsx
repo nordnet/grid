@@ -1,27 +1,33 @@
 import React from 'react';
-import { Row, Col } from './grid';
+import { Grid, Row, Col } from 'react-bem-grid';
 import Box from './Box';
 import StyleGuideItem from './StyleGuideItem';
 
-class AlignmentTop extends React.Component {
+class DistributionBetween extends React.Component {
   render() {
     const simplifiedMarkup = `<Grid>
-  <Row xsTop>
-    <Col xs={6}>
+  <Row xsBetween>
+    <Col xs={2}>
       ...
     </Col>
-    <Col xs={6}>
+    <Col xs={2}>
+      ...
+    </Col>
+    <Col xs={2}>
       ...
     </Col>
   </Row>
 </Grid>`;
 
     const markup = (
-      <Row xsTop>
-        <Col xs={6}>
-          <Box style={ {minHeight: '6rem'} } />
+      <Row xsBetween>
+        <Col xs={2}>
+          <Box />
         </Col>
-        <Col xs={6}>
+        <Col xs={2}>
+          <Box />
+        </Col>
+        <Col xs={2}>
           <Box />
         </Col>
       </Row>
@@ -29,7 +35,7 @@ class AlignmentTop extends React.Component {
 
     return (
       <StyleGuideItem
-        subTitle="Top"
+        subTitle="Between"
         simplifiedMarkup={ simplifiedMarkup }
       >
       { markup }
@@ -38,4 +44,4 @@ class AlignmentTop extends React.Component {
   }
 }
 
-export default AlignmentTop;
+export default DistributionBetween;

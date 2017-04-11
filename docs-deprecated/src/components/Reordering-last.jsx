@@ -1,41 +1,41 @@
 import React from 'react';
-import { Row, Col } from './grid';
+import { Grid, Row, Col } from 'react-bem-grid';
 import Box from './Box';
 import StyleGuideItem from './StyleGuideItem';
 
-class DistributionBetween extends React.Component {
+class ReorderingLast extends React.Component {
   render() {
     const simplifiedMarkup = `<Grid>
-  <Row xsBetween>
-    <Col xs={2}>
-      ...
+  <Row>
+    <Col xs={4} xsLast>
+      1
     </Col>
-    <Col xs={2}>
-      ...
+    <Col xs={4}>
+      2
     </Col>
-    <Col xs={2}>
-      ...
+    <Col xs={4}>
+      3
     </Col>
   </Row>
 </Grid>`;
 
     const markup = (
-      <Row xsBetween>
-        <Col xs={2}>
-          <Box />
+      <Row>
+        <Col xs={4} xsLast>
+          <Box>1</Box>
         </Col>
-        <Col xs={2}>
-          <Box />
+        <Col xs={4}>
+          <Box>2</Box>
         </Col>
-        <Col xs={2}>
-          <Box />
+        <Col xs={4}>
+          <Box>3</Box>
         </Col>
       </Row>
     );
 
     return (
       <StyleGuideItem
-        subTitle="Between"
+        subTitle="Last"
         simplifiedMarkup={ simplifiedMarkup }
       >
       { markup }
@@ -44,4 +44,4 @@ class DistributionBetween extends React.Component {
   }
 }
 
-export default DistributionBetween;
+export default ReorderingLast;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row, Col } from './grid';
+import { Grid, Row, Col } from 'react-bem-grid';
 import './documentation.scss';
 import './navigation.scss';
 

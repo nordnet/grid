@@ -1,14 +1,14 @@
 import React from 'react';
-import { Row, Col } from './grid';
+import { Grid, Row, Col } from 'react-bem-grid';
 import Box from './Box';
-import StyleGuideItem from './StyleGuideItem';
+import StyleGuideItem from './StyleGuideItem'
 
-class AlignmentCenter extends React.Component {
+class AlignmentStart extends React.Component {
   render() {
     const simplifiedMarkup = `<Grid>
   <Row>
     <Col xs={12}>
-      <Row xsCenter>
+      <Row xsStart>
         <Col xs={6}>
           ...
         </Col>
@@ -21,7 +21,7 @@ class AlignmentCenter extends React.Component {
       <Row>
         <Col xs={12}>
           <Box container>
-            <Row xsCenter>
+            <Row xsStart>
               <Col xs={6}>
                 <Box nested />
               </Col>
@@ -33,7 +33,7 @@ class AlignmentCenter extends React.Component {
 
     return (
       <StyleGuideItem
-        subTitle="Center"
+        subTitle="Start"
         simplifiedMarkup={ simplifiedMarkup }
       >
       { markup }
@@ -42,4 +42,4 @@ class AlignmentCenter extends React.Component {
   }
 }
 
-export default AlignmentCenter;
+export default AlignmentStart;

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Row, Col } from './grid';
+import { Grid, Row, Col } from 'react-bem-grid';
 import Box from './Box';
-import StyleGuideItem from './StyleGuideItem';
+import StyleGuideItem from './StyleGuideItem'
 
-class AlignmentTop extends React.Component {
+class CustomElementType extends React.Component {
   render() {
     const simplifiedMarkup = `<Grid>
-  <Row xsTop>
+  <Row componentClass='nav'>
     <Col xs={6}>
       ...
     </Col>
@@ -17,9 +17,9 @@ class AlignmentTop extends React.Component {
 </Grid>`;
 
     const markup = (
-      <Row xsTop>
+      <Row componentClass='nav'>
         <Col xs={6}>
-          <Box style={ {minHeight: '6rem'} } />
+          <Box />
         </Col>
         <Col xs={6}>
           <Box />
@@ -29,7 +29,8 @@ class AlignmentTop extends React.Component {
 
     return (
       <StyleGuideItem
-        subTitle="Top"
+        title="Custom Element Type"
+        description="Add the componentClass property to override the default element type of a Grid, Row or Col."
         simplifiedMarkup={ simplifiedMarkup }
       >
       { markup }
@@ -38,4 +39,4 @@ class AlignmentTop extends React.Component {
   }
 }
 
-export default AlignmentTop;
+export default CustomElementType;

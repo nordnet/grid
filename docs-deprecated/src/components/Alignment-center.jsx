@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from './grid';
+import { Grid, Row, Col } from 'react-bem-grid';
 import Box from './Box';
 import StyleGuideItem from './StyleGuideItem';
 
