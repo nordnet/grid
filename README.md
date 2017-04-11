@@ -1,8 +1,7 @@
 # grid
 
 [![NPM version][npm-image]][npm-url]
-[![Unix Build Status][travis-image]][travis-url]
-[![Windows Build Status][appveyor-image]][appveyor-url]
+[![Build][travis-image]][travis-url]
 [![Coveralls Status][coveralls-image]][coveralls-url]
 [![Dependency Status][depstat-image]][depstat-url]
 
@@ -40,10 +39,7 @@ MIT © [Nordnet Bank AB](https://www.nordnet.se)
 [npm-image]: https://img.shields.io/npm/v/grid.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/nordnet/grid
-[travis-image]: https://img.shields.io/travis/nordnet/grid.svg?style=flat-square&label=unix
-
-[appveyor-url]: https://ci.appveyor.com/project/nordnet/grid
-[appveyor-image]: https://img.shields.io/appveyor/ci/nordnet/grid.svg?style=flat-square&label=windows
+[travis-image]: https://img.shields.io/travis/nordnet/grid.svg?style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/nordnet/grid
 [coveralls-image]: https://img.shields.io/coveralls/nordnet/grid.svg?style=flat-square
