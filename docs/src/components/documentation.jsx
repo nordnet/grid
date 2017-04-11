@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from './grid';
-// import './documentation.scss';
-// import './navigation.scss';
+import './documentation.css';
+import './navigation.css';
 
 import Responsive from './Responsive';
 import Offsets from './Offsets';
@@ -101,7 +101,7 @@ class Documentation extends React.Component {
           </Row>
           <Row>
             <Col xs={12}>
-              <p>A React component for a BEM grid based on <a href="http://flexboxgrid.com/">Flexbox Grid</a></p>
+              <p>Gris System as a React component based on <a href="http://flexboxgrid.com/">Flexbox Grid</a></p>
             </Col>
           </Row>
           <Row>

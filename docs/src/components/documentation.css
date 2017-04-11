@@ -14,21 +14,22 @@ hr {
   padding: 4rem 0;
   background: #00A8EF;
   color: #fff;
+}
 
-  h1 {
-    margin: 0;
-    font-size: 3rem;
-  }
+.documentation__header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
 
-  p {
-    margin-bottom: 2rem;
+.documentation__header p {
+  margin-bottom: 2rem;
+}
 
-    > a {
-      color: inherit;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  }
+
+.documentation__header p > a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .btn {
@@ -42,9 +43,9 @@ hr {
   width: 100%;
   box-sizing: border-box;
   transition: all .25s linear;
+}
 
-  &:hover {
-    background: rgba(#fff, .9);
-    color: #00A8EF;
-  }
+.btn:hover {
+  background: rgba(#fff, .9);
+  color: #00A8EF;
 }

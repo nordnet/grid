@@ -1,0 +1,7 @@
+.style-guide-item__link {
+  color: inherit;
+  text-decoration: none;
+}
+.style-guide-item__code {
+  border-radius: 2px;
+}
