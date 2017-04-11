@@ -7,6 +7,7 @@
     "start": "run-p watch docs:start",
     "docs:start": "onpm docs start",
     "docs:build": "cd docs && npm run build && cd ..",
+    "docs:publish": "buildbranch gh-pages docs/build",
     "watch": "npm run babel -- --watch",
     "test": "ava",
     "tdd": "ava --watch",
