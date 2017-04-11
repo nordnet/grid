@@ -79,7 +79,7 @@ Row.propTypes = {
   className: PropTypes.string,
   style: PropTypes.object,
   children: PropTypes.node,
-  componentClass: PropTypes.oneOf([PropTypes.element, PropTypes.string]),
+  componentClass: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
 
   reverse: PropTypes.bool,
 

@@ -15,11 +15,12 @@
     "watch": "npm run babel -- --watch",
     "test": "ava",
     "tdd": "ava --watch",
+    "coverage": "nyc ava",
     "lint": "eslint .",
     "clean": "rimraf dist",
     "babel": "babel src -d dist --copy-files --ignore test.js,.md",
     "build": "run-s clean babel",
-    "prepublish": "npm run build",
+    "prepublish": "in-publish && run-s build || not-in-publish",
     "push": "git push --follow-tags",
     "postpublish": "run-s clean push"
   },
@@ -40,16 +41,32 @@
   "bugs": {
     "url": "https://github.com/nordnet/grid/issues"
   },
+  "ava": {
+    "files": [
+      "src/**/*test.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
   "devDependencies": {
+    "ava": "^0.19.1",
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.3.3",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "enzyme": "^2.8.0",
     "eslint": "^3.19.0",
     "eslint-config-pedant": "^0.8.1",
     "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-require-path-exists": "^1.1.5",
+    "in-publish": "^2.0.0",
     "npm-run-all": "^4.0.2",
+    "nyc": "^10.2.0",
     "othernpm": "^1.1.0",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.3",
     "rimraf": "^2.6.1"
   },
   "dependencies": {
