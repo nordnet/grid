@@ -2,12 +2,16 @@
   "name": "@nordnetab/grid",
   "version": "0.0.0",
   "description": "Grid system",
+  "homepage": "https://nordnet.github.io/grid/",
   "main": "dist",
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "start": "run-p watch docs:start",
     "docs:start": "onpm docs start",
-    "docs:build": "cd docs && npm run build && cd ..",
-    "docs:publish": "buildbranch gh-pages docs/build",
+    "docs:deploy": "onpm docs run deploy",
     "watch": "npm run babel -- --watch",
     "test": "ava",
     "tdd": "ava --watch",
@@ -17,7 +21,7 @@
     "build": "run-s clean babel",
     "prepublish": "npm run build",
     "push": "git push --follow-tags",
-    "postpublish": "npm-run-all clean push"
+    "postpublish": "run-s clean push"
   },
   "keywords": [
     "react",
@@ -27,13 +31,19 @@
     "grid",
     "column"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nordnet/grid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nordnet/grid/issues"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.3.3",
     "babel-preset-react": "^6.24.1",
-    "buildbranch": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-pedant": "^0.8.1",
     "eslint-plugin-react": "^6.10.3",
