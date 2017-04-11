@@ -1,2 +1,2 @@
-export { grid } from '../../src/';
-export { default } from '../../src/';
+export { Grid, Row, Col } from '../../../dist/';
+export { default } from '../../../dist/';

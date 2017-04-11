@@ -1,7 +1,7 @@
 import React from 'react';
 import Highlight from 'react-highlight';
 import './hljs.css';
-import './style-guide-item.scss';
+// import './style-guide-item.scss';
 
 class StyleGuideItem extends React.Component {
   renderTitle() {

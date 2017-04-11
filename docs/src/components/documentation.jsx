@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from './grid';
-import './documentation.scss';
-import './navigation.scss';
+// import './documentation.scss';
+// import './navigation.scss';
 
 import Responsive from './Responsive';
 import Offsets from './Offsets';
