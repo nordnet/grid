@@ -12,7 +12,9 @@ const styles = {
 };
 
 Object.keys(breakpoints).forEach(breakpoint => {
-  if (breakpoint === 'xs') return;
+  if (breakpoint === 'xs') {
+    return
+  }
 
   styles.grid[media[breakpoint]] = {
     width: containers[breakpoint],

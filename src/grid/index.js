@@ -25,12 +25,12 @@ function Grid({
 }
 
 Grid.propTypes = {
+  classes: PropTypes.object,
   fluid: PropTypes.bool,
   className: PropTypes.string,
   style: PropTypes.object,
   children: PropTypes.node,
   componentClass: PropTypes.oneOf([PropTypes.element, PropTypes.string]),
-  classes: PropTypes.object,
 };
 
 Grid.defaultProps = {

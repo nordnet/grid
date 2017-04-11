@@ -50,6 +50,7 @@ function Col({
 }
 
 Col.propTypes = {
+  classes: PropTypes.object,
   className: PropTypes.string,
   style: PropTypes.object,
   children: PropTypes.node,

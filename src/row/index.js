@@ -74,11 +74,13 @@ function Row({
 }
 
 Row.propTypes = {
-  reverse: PropTypes.bool,
+  classes: PropTypes.object,
   className: PropTypes.string,
   style: PropTypes.object,
   children: PropTypes.node,
   componentClass: PropTypes.oneOf([PropTypes.element, PropTypes.string]),
+
+  reverse: PropTypes.bool,
 
   xsStart: PropTypes.bool,
   smStart: PropTypes.bool,
