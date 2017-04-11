@@ -1,12 +1,43 @@
 {
   "name": "@nordnetab/grid",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Grid system",
+  "main": "dist",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo 'hello there'",
+    "watch": "npm run build -- --watch",
+    "test": "ava",
+    "tdd": "ava --watch",
+    "lint": "eslint .",
+    "clean": "rimraf dist",
+    "babel": "babel src -d dist --copy-files --ignore test.js,.md",
+    "build": "run-s clean babel"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "design",
+    "ui",
+    "ux",
+    "grid",
+    "column"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.3.3",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-pedant": "^0.8.1",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-require-path-exists": "^1.1.5",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.6",
+    "react": "^15.5.3",
+    "react-jss": "^6.0.0"
+  }
 }
