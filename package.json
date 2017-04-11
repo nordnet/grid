@@ -4,15 +4,19 @@
   "description": "Grid system",
   "main": "dist",
   "scripts": {
-    "start": "run-p watch docs",
-    "docs": "onpm docs start",
+    "start": "run-p watch docs:start",
+    "docs:start": "onpm docs start",
+    "docs:build": "cd docs && npm run build && cd ..",
     "watch": "npm run babel -- --watch",
     "test": "ava",
     "tdd": "ava --watch",
     "lint": "eslint .",
     "clean": "rimraf dist",
     "babel": "babel src -d dist --copy-files --ignore test.js,.md",
-    "build": "run-s clean babel"
+    "build": "run-s clean babel",
+    "prepublish": "npm run build",
+    "push": "git push --follow-tags",
+    "postpublish": "npm-run-all clean push"
   },
   "keywords": [
     "react",
@@ -28,6 +32,7 @@
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.3.3",
     "babel-preset-react": "^6.24.1",
+    "buildbranch": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-pedant": "^0.8.1",
     "eslint-plugin-react": "^6.10.3",
