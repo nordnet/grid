@@ -1,6 +1,6 @@
 {
   "name": "@nordnet/grid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Grid system",
   "homepage": "https://nordnet.github.io/grid/",
   "main": "dist",
