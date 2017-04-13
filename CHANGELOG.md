@@ -9,8 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 [@iamstarkov]: https://github.com/iamstarkov
 
-## upcoming release
+## 0.1.2
 
+* migrated into @nordnet org on npm.
 * docs deployment fixes
 
 ## 0.1.1
