@@ -1,27 +1,17 @@
+import { theme } from 'nordnet-ui-kit';
+
+export const { breakpoints } = theme;
+export const { media } = theme.mixins;
+
 export const columns = 12;
 
-export const gutter = '2rem';
-
-export const breakpoints = {
-  // The grid is mobile first so xs is the default, hence no breakpoint
-  xs: false,
-  sm: '48em',
-  md: '62em',
-  lg: '75em',
-};
+export const gutter = 20;
 
 export const containers = {
   xs: false,
-  sm: '46rem',
-  md: '61rem',
-  lg: '71rem',
-};
-
-export const media = {
-  xs: `@media only screen and (min-width: ${breakpoints.xs})`,
-  sm: `@media only screen and (min-width: ${breakpoints.sm})`,
-  md: `@media only screen and (min-width: ${breakpoints.md})`,
-  lg: `@media only screen and (min-width: ${breakpoints.lg})`,
+  sm: breakpoints.sm - 30,
+  md: breakpoints.md - 30,
+  lg: breakpoints.lg - 30,
 };
 
 export default {

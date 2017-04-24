@@ -105,6 +105,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "nordnet-ui-kit": "0.2.0-rc.3",
     "prop-types": "^15.5.6",
     "react": "^15.5.3",
     "react-jss": "^6.0.0"

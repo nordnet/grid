@@ -7,8 +7,8 @@ const styles = {
     flex: '0 1 auto',
     'flex-direction': 'row',
     'flex-wrap': 'wrap',
-    'margin-right': `${gutter.replace(/rem/, '') / -4}rem`,
-    'margin-left': `${gutter.replace(/rem/, '') / -4}rem`,
+    'margin-right': gutter / -4,
+    'margin-left': gutter / -4,
   },
   reverse: {
     'flex-direction': 'row-reverse',
@@ -39,10 +39,9 @@ Object.keys(breakpoints).forEach(breakpoint => {
   Object.keys(helpers)
     .map(key => ({ key, helper: helpers[key] }))
     .forEach(({ key, helper }) => {
-      const value = breakpoint === 'xs'
-        ? helper
-        : { [media[breakpoint]]: helper };
-      styles[`${breakpoint}-${key}`] = value;
+      styles[`${breakpoint}-${key}`] = {
+        [media[breakpoint]]: helper,
+      };
     });
 });
 

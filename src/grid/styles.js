@@ -12,13 +12,12 @@ const styles = {
 };
 
 Object.keys(breakpoints).forEach(breakpoint => {
-  if (breakpoint === 'xs') {
-    return;
-  }
-
-  styles.grid[media[breakpoint]] = {
-    width: containers[breakpoint],
+  console.log({ a: media(breakpoint), b: breakpoint });
+  styles.grid[media(breakpoint)] = {
+    width: breakpoint === 'xs' ? '100%' : containers[breakpoint],
   };
 });
+
+console.log(styles);
 
 export default styles;

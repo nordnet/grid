@@ -6,8 +6,8 @@ const styles = {
   col: {
     'box-sizing': 'border-box',
     flex: '0 0 auto',
-    'padding-right': `${gutter.replace(/rem/, '') / 4}rem`,
-    'padding-left': `${gutter.replace(/rem/, '') / 4}rem`,
+    'padding-right': gutter / 4,
+    'padding-left': gutter / 4,
   },
   reverse: {
     'flex-direction': 'column-reverse',
@@ -42,16 +42,13 @@ Object.keys(breakpoints).forEach(breakpoint => {
     .forEach(({ key, helper }) => {
       if (key === 'size' || key === 'offset') {
         range(columns).forEach(colIndex => {
-          styles[`${breakpoint}-${key}-${colIndex}`] = breakpoint === 'xs'
-            ? helper(colIndex)
-            : { [media[breakpoint]]: helper(colIndex) };
+          styles[`${breakpoint}-${key}-${colIndex}`] = {
+            [media(breakpoint)]: helper(colIndex),
+          };
         });
       } else {
         const sKey = key === 'basic' ? breakpoint : `${breakpoint}-${key}`;
-        const sValue = breakpoint === 'xs'
-          ? helper
-          : { [media[breakpoint]]: helper };
-        styles[sKey] = sValue;
+        styles[sKey] = { [media(breakpoint)]: helper };
       }
     });
 });
