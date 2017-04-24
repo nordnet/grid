@@ -40,6 +40,7 @@ See more at https://nordnet.github.io/grid/
 
 MIT © [Nordnet Bank AB](https://www.nordnet.se)
 
+
 [npm-url]: https://npmjs.org/package/@nordnet/grid
 [npm-image]: https://img.shields.io/npm/v/@nordnet/grid.svg?style=flat-square
 
