@@ -1,9 +1,11 @@
 language: node_js
+cache:
+  yarn: true
 node_js:
   - v7
   - v6
   - v4
 after_script:
   - 'npm run coveralls'
-cache:
-  yarn: true
+after_success:
+  - semantic-release pre && npm publish && semantic-release post

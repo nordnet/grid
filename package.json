@@ -9,6 +9,10 @@
     "dist"
   ],
   "scripts": {
+    "precommit": "lint-staged",
+    "commit": "git-cz",
+    "commitmsg": "validate-commit-msg",
+    "prepush": "run-s test",
     "start": "run-p watch docs:start",
     "docs:start": "onpm docs start",
     "predocs:deploy": "run-s build",
@@ -24,8 +28,18 @@
     "prepublish": "in-publish && run-s build || not-in-publish",
     "precoveralls": "run-s coverage",
     "coveralls": "coveralls < coverage/lcov.info",
-    "push": "git push --follow-tags",
-    "postpublish": "run-s clean push"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --trailing-comma all --write",
+      "git add"
+    ]
   },
   "keywords": [
     "react",
@@ -68,19 +82,25 @@
     "babel-preset-env": "^1.3.3",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
+    "commitizen": "^2.9.6",
     "coveralls": "^2.13.0",
+    "cz-conventional-changelog": "^2.0.0",
     "enzyme": "^2.8.0",
     "eslint": "^3.19.0",
     "eslint-config-pedant": "^0.8.1",
     "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-require-path-exists": "^1.1.5",
+    "husky": "^0.13.3",
     "in-publish": "^2.0.0",
+    "lint-staged": "^3.4.0",
     "npm-run-all": "^4.0.2",
     "nyc": "^10.2.0",
     "othernpm": "^1.1.0",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.3",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "semantic-release": "^6.3.2",
+    "validate-commit-msg": "^2.12.1"
   },
   "dependencies": {
     "classnames": "^2.2.5",

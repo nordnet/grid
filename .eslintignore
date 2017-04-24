@@ -8,4 +8,5 @@ dist
 .idea
 .vscode
 *.log
+*.lock
 docs
