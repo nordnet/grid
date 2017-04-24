@@ -6,4 +6,4 @@ node_js:
 after_script:
   - 'npm run coveralls'
 after_success:
-  - semantic-release pre && npm publish && semantic-release post
+  - 'npm run semantic-release'
