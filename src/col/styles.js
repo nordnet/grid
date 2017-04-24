@@ -5,15 +5,15 @@ const range = x => new Array(x).fill('').map((_, i) => i + 1);
 const styles = {
   col: {
     'box-sizing': 'border-box',
-    'flex': '0 0 auto',
-    'padding-right': `${(gutter.replace(/rem/, '') / 4)}rem`,
-    'padding-left': `${(gutter.replace(/rem/, '') / 4)}rem`,
+    flex: '0 0 auto',
+    'padding-right': `${gutter.replace(/rem/, '') / 4}rem`,
+    'padding-left': `${gutter.replace(/rem/, '') / 4}rem`,
   },
   reverse: {
     'flex-direction': 'column-reverse',
   },
 };
-const _size = i => Number((100 / columns) * i).toFixed(4);
+const _size = i => Number(100 / columns * i).toFixed(4);
 
 const helpers = {
   basic: {
@@ -36,7 +36,6 @@ const helpers = {
   },
 };
 
-
 Object.keys(breakpoints).forEach(breakpoint => {
   Object.keys(helpers)
     .map(key => ({ key, helper: helpers[key] }))
@@ -48,8 +47,10 @@ Object.keys(breakpoints).forEach(breakpoint => {
             : { [media[breakpoint]]: helper(colIndex) };
         });
       } else {
-        const sKey = (key === 'basic') ? breakpoint : `${breakpoint}-${key}`;
-        const sValue = breakpoint === 'xs' ? helper : { [media[breakpoint]]: helper };
+        const sKey = key === 'basic' ? breakpoint : `${breakpoint}-${key}`;
+        const sValue = breakpoint === 'xs'
+          ? helper
+          : { [media[breakpoint]]: helper };
         styles[sKey] = sValue;
       }
     });

@@ -13,14 +13,17 @@ function Grid({
   children,
   componentClass: ComponentClass,
 }) {
-  const className = cn({
-    [classes.grid]: !fluid,
-    [classes.gridFluid]: fluid,
-  }, classNameCustom);
+  const className = cn(
+    {
+      [classes.grid]: !fluid,
+      [classes.gridFluid]: fluid,
+    },
+    classNameCustom,
+  );
 
   return (
-    <ComponentClass className={ className } style={ style }>
-      { children }
+    <ComponentClass className={className} style={style}>
+      {children}
     </ComponentClass>
   );
 }

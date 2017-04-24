@@ -13,7 +13,7 @@ const styles = {
 
 Object.keys(breakpoints).forEach(breakpoint => {
   if (breakpoint === 'xs') {
-    return
+    return;
   }
 
   styles.grid[media[breakpoint]] = {
