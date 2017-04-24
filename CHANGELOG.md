@@ -9,6 +9,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 [@iamstarkov]: https://github.com/iamstarkov
 
+### 0.1.4 (2017-04-24)
+
+#### Bug Fixes
+
+* remove console.logs ([75cdfe4a](https://github.com/nordnet/grid/commit/75cdfe4a))
+
+
 ### 0.1.3 (2017-04-24)
 
 #### Bug Fixes
