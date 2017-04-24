@@ -9,6 +9,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 [@iamstarkov]: https://github.com/iamstarkov
 
+### 0.1.3 (2017-04-24)
+
+#### Bug Fixes
+
+* make existing breakpoints wider ([9285395e](https://github.com/nordnet/grid/commit/9285395e))
+
 ## 0.1.2
 
 * migrated into @nordnet org on npm.
