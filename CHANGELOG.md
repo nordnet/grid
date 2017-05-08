@@ -9,6 +9,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 [@iamstarkov]: https://github.com/iamstarkov
 
+### 0.1.5 (2017-05-08)
+
+#### Bug Fixes
+
+* bump nordnet-ui-kit@^0.2.0 ([8a354b5a](https://github.com/nordnet/grid/commit/8a354b5a))
+
+
 ### 0.1.4 (2017-04-24)
 
 #### Bug Fixes
