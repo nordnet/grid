@@ -9,6 +9,7 @@
     "dist"
   ],
   "scripts": {
+    "postinstall": "onpm docs install",
     "precommit": "lint-staged",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
