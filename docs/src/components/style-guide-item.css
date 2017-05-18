@@ -2,6 +2,12 @@
   color: inherit;
   text-decoration: none;
 }
+
+h2, h3, p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .style-guide-item__code {
   border-radius: 2px;
 }
