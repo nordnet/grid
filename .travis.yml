@@ -1,4 +1,7 @@
 language: node_js
+before_script:
+  - 'git config --global user.email "nordnet-release@localhost"'
+  - 'git config --global user.name "nordnet-release"'
 node_js:
   - v7
   - v6
