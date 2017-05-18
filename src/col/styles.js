@@ -4,10 +4,10 @@ const range = x => new Array(x).fill('').map((_, i) => i + 1);
 
 const styles = {
   col: {
-    'box-sizing': 'border-box',
+    boxSizing: 'border-box',
     flex: '0 0 auto',
-    'padding-right': gutter / 4,
-    'padding-left': gutter / 4,
+    paddingRight: gutter / 2,
+    paddingLeft: gutter / 2,
   },
   reverse: {
     'flex-direction': 'column-reverse',

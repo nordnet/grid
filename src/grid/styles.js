@@ -2,12 +2,12 @@ import { gutter, media, breakpoints, containers } from '../spec';
 
 const styles = {
   grid: {
+    boxSizing: 'border-box',
     margin: '0 auto',
   },
   gridFluid: {
+    boxSizing: 'border-box',
     margin: '0 auto',
-    paddingRight: gutter,
-    paddingLeft: gutter,
   },
 };
 

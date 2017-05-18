@@ -7,8 +7,6 @@ const styles = {
     flex: '0 1 auto',
     'flex-direction': 'row',
     'flex-wrap': 'wrap',
-    'margin-right': gutter / -4,
-    'margin-left': gutter / -4,
   },
   reverse: {
     'flex-direction': 'row-reverse',
