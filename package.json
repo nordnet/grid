@@ -16,8 +16,8 @@
     "start": "run-p watch docs:start",
     "docs:install": "onpm docs install",
     "docs:start": "onpm docs start",
-    "predocs:deploy": "run-s build",
     "docs:deploy": "onpm docs run deploy",
+    "docs:deploy:ci": "onpm docs install && onpm docs run deploy:ci",
     "watch": "npm run babel -- --watch",
     "test": "ava",
     "tdd": "ava --watch",
@@ -29,7 +29,7 @@
     "prepublish": "in-publish && run-s build || not-in-publish",
     "precoveralls": "run-s coverage",
     "coveralls": "coveralls < coverage/lcov.info",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post && npm run docs:deploy"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post && npm run docs:deploy:ci"
   },
   "config": {
     "commitizen": {
