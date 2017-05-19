@@ -36,6 +36,16 @@ export default App;
 
 See more at https://nordnet.github.io/grid/
 
+## Example (docs)
+
+(`yarn` is interchangable with `npm` in this example)
+
+```sh
+yarn run docs:install
+# then
+yarn run docs:start
+```
+
 ## License
 
 MIT © [Nordnet Bank AB](https://www.nordnet.se)

@@ -9,12 +9,12 @@
     "dist"
   ],
   "scripts": {
-    "postinstall": "onpm docs install",
     "precommit": "lint-staged",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
     "prepush": "run-s test",
     "start": "run-p watch docs:start",
+    "docs:install": "onpm docs install",
     "docs:start": "onpm docs start",
     "predocs:deploy": "run-s build",
     "docs:deploy": "onpm docs run deploy",
