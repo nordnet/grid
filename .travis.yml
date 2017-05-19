@@ -1,12 +1,14 @@
 language: node_js
-before_script:
-  - 'git config --global user.email "nordnet-release@localhost"'
-  - 'git config --global user.name "nordnet-release"'
 node_js:
-  - v7
-  - v6
-  - v4
-after_script:
-  - 'npm run coveralls'
-after_success:
-  - 'npm run semantic-release'
+  - 7
+  - 6
+  - 4
+
+jobs:
+  include:
+    - stage: release
+      node_js: 7
+      script:
+        - 'git config --global user.email "nordnet-release@localhost"'
+        - 'git config --global user.name "nordnet-release"'
+        - 'npm run semantic-release'
