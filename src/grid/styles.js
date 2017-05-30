@@ -1,4 +1,4 @@
-import { gutter, media, breakpoints, containers } from '../spec';
+import { media, breakpoints, containers } from '../spec';
 
 const styles = {
   grid: {

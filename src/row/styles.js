@@ -1,4 +1,4 @@
-import { gutter, media, breakpoints } from '../spec';
+import { media, breakpoints } from '../spec';
 
 const styles = {
   row: {
