@@ -38,7 +38,7 @@ Object.keys(breakpoints).forEach(breakpoint => {
     .map(key => ({ key, helper: helpers[key] }))
     .forEach(({ key, helper }) => {
       styles[`${breakpoint}-${key}`] = {
-        [media[breakpoint]]: helper,
+        [media(breakpoint)]: helper,
       };
     });
 });
