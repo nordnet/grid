@@ -9,6 +9,6 @@ jobs:
     - stage: release
       node_js: 7
       script:
-        - 'git config --global user.email "nordnet-release@localhost"'
-        - 'git config --global user.name "nordnet-release"'
-        - 'npm run semantic-release'
+        - git config --global user.email "nordnet-release@localhost"
+        - git config --global user.name "nordnet-release"
+        - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
