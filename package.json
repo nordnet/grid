@@ -87,7 +87,7 @@
     "coveralls": "^2.13.1",
     "cz-conventional-changelog": "^2.0.0",
     "enzyme": "^2.8.2",
-    "eslint": "^4.0.0",
+    "eslint": "^3.19.0",
     "eslint-config-pedant": "^0.9.0",
     "eslint-plugin-react": "^7.0.1",
     "eslint-plugin-require-path-exists": "^1.1.7",
