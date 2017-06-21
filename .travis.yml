@@ -4,6 +4,11 @@ node_js:
   - 6
   - 4
 
+# blocklist version commits
+branches:
+  except:
+    - /^v[0-9]/
+
 jobs:
   include:
     - stage: release
