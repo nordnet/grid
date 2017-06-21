@@ -9,6 +9,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 [@iamstarkov]: https://github.com/iamstarkov
 
+## 1.1.0 (2017-06-21)
+
+#### Features
+
+* add noPadding prop to <Col /> to remove paddings ([3b6ed254](https://github.com/nordnet/grid/commit/3b6ed254))
+
 ### 0.1.5 (2017-05-08)
 
 #### Bug Fixes
