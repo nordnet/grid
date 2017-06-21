@@ -20,6 +20,7 @@ import DistributionBetween from './Distribution-between';
 import ReorderingFirst from './Reordering-first';
 import ReorderingLast from './Reordering-last';
 import Reversing from './Reversing';
+import NoPadding from './NoPadding';
 
 class Documentation extends React.Component {
   renderIndex() {
@@ -50,6 +51,7 @@ class Documentation extends React.Component {
         'Last',
       ]},
       {title: 'Reversing'},
+      {title: 'NoPadding'},
     ];
 
     return (
@@ -172,6 +174,8 @@ class Documentation extends React.Component {
           <hr />
 
           <Reversing />
+          <hr />
+          <NoPadding />
 
         </Grid>
       </div>

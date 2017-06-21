@@ -53,4 +53,8 @@ Object.keys(breakpoints).forEach(breakpoint => {
     });
 });
 
+styles.noPadding = {
+  padding: 0,
+};
+
 export default styles;

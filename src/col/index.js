@@ -30,6 +30,7 @@ function Col({
   smLast,
   mdLast,
   lgLast,
+  noPadding,
 }) {
   const className = cn(
     {
@@ -55,6 +56,7 @@ function Col({
       [classes['sm-last']]: smLast,
       [classes['md-last']]: mdLast,
       [classes['lg-last']]: lgLast,
+      [classes['noPadding']]: noPadding,
     },
     classNameCustom,
   );
@@ -94,6 +96,7 @@ Col.propTypes = {
   smLast: PropTypes.bool,
   mdLast: PropTypes.bool,
   lgLast: PropTypes.bool,
+  noPadding: PropTypes.bool,
 };
 
 Col.defaultProps = {
