@@ -13,6 +13,8 @@ jobs:
   include:
     - stage: release
       node_js: 7
+      branches:
+        only: master
       script:
         - git config --global user.email "nordnet-release@localhost"
         - git config --global user.name "nordnet-release"
