@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 7
+  - 8
   - 6
   - 4
 
@@ -12,8 +12,9 @@ branches:
 jobs:
   include:
     - stage: release
-      node_js: 7
+      install: echo "hello"
       script:
         - git config --global user.email "nordnet-release@localhost"
         - git config --global user.name "nordnet-release"
-        - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
+        - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then npm install; fi
+        - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release; fi
