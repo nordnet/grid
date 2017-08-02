@@ -12,9 +12,9 @@ branches:
 jobs:
   include:
     - stage: release
+      install: echo "hello"
       script:
-        - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then echo "no releases for pull-requests; fi"
-        - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then exit 0; fi;
         - git config --global user.email "nordnet-release@localhost"
         - git config --global user.name "nordnet-release"
-        - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
+        - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then npm install; fi
+        - if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release; fi
