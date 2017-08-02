@@ -13,7 +13,8 @@ jobs:
   include:
     - stage: release
       install: echo "hello"
-      script:
+      script: echo "nothing to see here, move along"
+      after_script:
         - git config --global user.email "nordnet-release@localhost"
         - git config --global user.name "nordnet-release"
         - if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then npm install; fi
