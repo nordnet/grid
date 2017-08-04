@@ -1,7 +1,5 @@
 # grid
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/nordnet/grid.svg)](https://greenkeeper.io/)
-
 [![NPM version][npm-image]][npm-url]
 [![Build][travis-image]][travis-url]
 [![Coveralls Status][coveralls-image]][coveralls-url]
