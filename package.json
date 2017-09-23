@@ -110,6 +110,6 @@
     "nordnet-ui-kit": "^1.6.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.3",
-    "react-jss": "^7.0.2"
+    "react-jss": "^7.2.0"
   }
 }
