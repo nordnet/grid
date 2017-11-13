@@ -99,7 +99,7 @@
     "othernpm": "^1.1.0",
     "prettier": "^1.4.4",
     "react-addons-test-utils": "^15.5.1",
-    "react-dom": "^15.5.4",
+    "react-dom": "^16.1.1",
     "react-test-renderer": "^15.5.4",
     "rimraf": "^2.6.1",
     "semantic-release": "^6.3.2",
