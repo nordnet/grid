@@ -78,7 +78,7 @@
     ]
   },
   "devDependencies": {
-    "ava": "^0.22.0",
+    "ava": "^0.24.0",
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
