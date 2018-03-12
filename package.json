@@ -98,17 +98,22 @@
     "nyc": "^11.0.2",
     "othernpm": "^1.1.0",
     "prettier": "^1.4.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.3",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
+    "react-jss": "^7.0.2",
     "react-test-renderer": "^15.5.4",
     "rimraf": "^2.6.1",
     "semantic-release": "^6.3.2",
     "validate-commit-msg": "^2.12.2"
   },
+  "peerDependencies": {
+    "prop-types": ">=15",
+    "react": ">=15",
+    "react-jss": ">=7"
+  },
   "dependencies": {
-    "classnames": "^2.2.5",
-    "prop-types": "^15.5.10",
-    "react": "^15.5.3",
-    "react-jss": "^7.0.2"
+    "classnames": "^2.2.5"
   }
 }
