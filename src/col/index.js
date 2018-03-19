@@ -12,7 +12,6 @@ function Col({
   className: classNameCustom,
   children,
   componentClass: ComponentClass,
-
   reverse,
   xs,
   sm,
@@ -61,11 +60,7 @@ function Col({
     classNameCustom,
   );
 
-  return (
-    <ComponentClass className={className}>
-      {children}
-    </ComponentClass>
-  );
+  return <ComponentClass className={className}>{children}</ComponentClass>;
 }
 
 Col.propTypes = {
