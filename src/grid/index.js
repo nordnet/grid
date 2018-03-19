@@ -12,11 +12,13 @@ function Grid({
   style,
   children,
   componentClass: ComponentClass,
+  noPadding,
 }) {
   const className = cn(
     {
       [classes.grid]: !fluid,
       [classes.gridFluid]: fluid,
+      [classes.noPadding]: noPadding,
     },
     classNameCustom,
   );
@@ -35,6 +37,7 @@ Grid.propTypes = {
   style: PropTypes.object,
   children: PropTypes.node,
   componentClass: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
+  noPadding: PropTypes.bool,
 };
 
 Grid.defaultProps = {

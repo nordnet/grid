@@ -9,6 +9,9 @@ const styles = {
     boxSizing: 'border-box',
     margin: '0 auto',
   },
+  noPadding: {
+    padding: 0,
+  },
 };
 
 Object.keys(breakpoints).forEach(breakpoint => {
