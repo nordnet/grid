@@ -18,7 +18,7 @@ function Grid({
     {
       [classes.grid]: !fluid,
       [classes.gridFluid]: fluid,
-      [classes['noPadding']]: noPadding,
+      [classes.noPadding]: noPadding,
     },
     classNameCustom,
   );

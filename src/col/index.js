@@ -55,7 +55,7 @@ function Col({
       [classes['sm-last']]: smLast,
       [classes['md-last']]: mdLast,
       [classes['lg-last']]: lgLast,
-      [classes['noPadding']]: noPadding,
+      [classes.noPadding]: noPadding,
     },
     classNameCustom,
   );
