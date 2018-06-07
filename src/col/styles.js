@@ -1,6 +1,7 @@
 import { media, gutter, columns, breakpoints } from '../spec';
 
-const range = x => new Array(x).fill('').map((_, i) => i + 1);
+const range = (x, firstIndex) =>
+  new Array(x).fill('').map((_, i) => i + firstIndex);
 
 const styles = {
   col: {
@@ -13,7 +14,7 @@ const styles = {
     'flex-direction': 'column-reverse',
   },
 };
-const _size = i => Number(100 / columns * i).toFixed(4);
+const _size = i => Number((100 / columns) * i).toFixed(4);
 
 const helpers = {
   basic: {
@@ -41,7 +42,7 @@ Object.keys(breakpoints).forEach(breakpoint => {
     .map(key => ({ key, helper: helpers[key] }))
     .forEach(({ key, helper }) => {
       if (key === 'size' || key === 'offset') {
-        range(columns).forEach(colIndex => {
+        range(columns, key === 'size' ? 1 : 0).forEach(colIndex => {
           styles[`${breakpoint}-${key}-${colIndex}`] = {
             [media(breakpoint)]: helper(colIndex),
           };
