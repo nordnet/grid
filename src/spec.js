@@ -3,7 +3,8 @@ export const breakpoints = {
   xs: false,
   sm: 768,
   md: 992,
-  lg: 1300,
+  lg: 1440,
+  xl: 1680,
 };
 
 export const media = size => {
@@ -22,9 +23,10 @@ export const gutter = 20;
 
 export const containers = {
   xs: false,
-  sm: breakpoints.sm - 30,
-  md: breakpoints.md - 30,
-  lg: breakpoints.lg - 30,
+  sm: 720,
+  md: 936,
+  lg: 1252,
+  xl: 1600,
 };
 
 export default {
