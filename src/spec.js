@@ -4,6 +4,7 @@ export const breakpoints = {
   sm: 768,
   md: 992,
   lg: 1300,
+  xl: 1680,
 };
 
 export const media = size => {
@@ -25,6 +26,7 @@ export const containers = {
   sm: breakpoints.sm - 30,
   md: breakpoints.md - 30,
   lg: breakpoints.lg - 30,
+  xl: 1600,
 };
 
 export default {
