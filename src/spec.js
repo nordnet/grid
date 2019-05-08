@@ -3,7 +3,7 @@ export const breakpoints = {
   xs: false,
   sm: 768,
   md: 992,
-  lg: 1300,
+  lg: 1440,
   xl: 1680,
 };
 
@@ -23,10 +23,10 @@ export const gutter = 20;
 
 export const containers = {
   xs: false,
-  sm: breakpoints.sm - 30,
-  md: breakpoints.md - 30,
-  lg: breakpoints.lg - 30,
-  xl: 1600,
+  sm: breakpoints.sm - 2 * 24,
+  md: breakpoints.md - 2 * 28,
+  lg: breakpoints.lg - 2 * 94,
+  xl: breakpoints.xl - 2 * 40,
 };
 
 export default {
