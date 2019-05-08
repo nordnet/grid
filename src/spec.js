@@ -23,10 +23,10 @@ export const gutter = 20;
 
 export const containers = {
   xs: false,
-  sm: 720,
-  md: 936,
-  lg: 1252,
-  xl: 1600,
+  sm: breakpoints.sm - 2 * 24,
+  md: breakpoints.md - 2 * 28,
+  lg: breakpoints.lg - 2 * 94,
+  xl: breakpoints.xl - 2 * 40,
 };
 
 export default {
