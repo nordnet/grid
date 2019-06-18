@@ -21,12 +21,21 @@ export const columns = 12;
 
 export const gutter = 20;
 
+export const offsets = {
+  // Used for Grid's outer padding
+  xs: 12,
+  sm: 24,
+  md: 28,
+  lg: 96,
+  xl: 10,
+};
+
 export const containers = {
   xs: false,
-  sm: breakpoints.sm - 2 * 24,
-  md: breakpoints.md - 2 * 28,
-  lg: breakpoints.lg - 2 * 94,
-  xl: breakpoints.xl - 2 * 40,
+  sm: breakpoints.sm,
+  md: breakpoints.md,
+  lg: breakpoints.lg,
+  xl: breakpoints.xl,
 };
 
 export default {
