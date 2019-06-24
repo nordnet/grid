@@ -27,7 +27,7 @@ export const offsets = {
   sm: 24,
   md: 28,
   lg: 96,
-  xl: 10,
+  xl: 40,
 };
 
 export const containers = {
