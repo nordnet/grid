@@ -8,14 +8,6 @@ const styles = {
     flex: '0 0 auto',
     paddingRight: gutter / 2,
     paddingLeft: gutter / 2,
-
-    '&:first-of-type': {
-      paddingLeft: 0,
-    },
-
-    '&:last-of-type': {
-      paddingRight: 0,
-    },
   },
   reverse: {
     'flex-direction': 'column-reverse',
