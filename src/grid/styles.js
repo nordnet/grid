@@ -19,12 +19,12 @@ Object.keys(breakpoints).forEach(breakpoint => {
     styles.grid[media(breakpoint)] = {
       width: '100%',
     };
+  } else {
+    styles.grid[media(breakpoint)] = {
+      width: containers[breakpoint],
+      padding: [0, offsets[breakpoint]],
+    };
   }
-
-  styles.grid[media(breakpoint)] = {
-    width: containers[breakpoint],
-    padding: [0, offsets[breakpoint]],
-  };
 });
 
 export default styles;
