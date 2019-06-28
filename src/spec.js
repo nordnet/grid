@@ -1,4 +1,6 @@
 export const breakpoints = {
+  // The grid is mobile first so xs is the default, hence no breakpoint
+  xs: false,
   sm: 768,
   md: 992,
   lg: 1440,
@@ -21,6 +23,7 @@ export const gutter = 20;
 
 export const offsets = {
   // Used for Grid's outer padding
+  xs: false,
   sm: 24,
   md: 28,
   lg: 96,
@@ -28,6 +31,7 @@ export const offsets = {
 };
 
 export const containers = {
+  xs: false,
   sm: breakpoints.sm,
   md: breakpoints.md,
   lg: breakpoints.lg,
