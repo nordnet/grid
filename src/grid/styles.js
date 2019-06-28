@@ -16,7 +16,7 @@ const styles = {
 
 Object.keys(breakpoints).forEach(breakpoint => {
   styles.grid[media(breakpoint)] = {
-    width: breakpoint === 'xs' ? '100%' : containers[breakpoint],
+    maxWidth: containers[breakpoint],
     padding: [0, offsets[breakpoint]],
   };
 });
