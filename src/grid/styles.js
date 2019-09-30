@@ -1,4 +1,4 @@
-import { media, breakpoints, containers, offsets } from '../spec';
+import { media, breakpoints, containers } from '../spec';
 
 const styles = {
   grid: {
@@ -22,7 +22,7 @@ Object.keys(breakpoints).forEach(breakpoint => {
   } else {
     styles.grid[media(breakpoint)] = {
       width: containers[breakpoint],
-      padding: [0, offsets[breakpoint]],
+      padding: [0, 20],
     };
   }
 });
