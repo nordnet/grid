@@ -22,7 +22,7 @@ Object.keys(breakpoints).forEach(breakpoint => {
   } else {
     styles.grid[media(breakpoint)] = {
       width: containers[breakpoint],
-      padding: [0, 20],
+      padding: [0, 8],
     };
   }
 });
